@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>ku'shi works - Portfolio</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/fabi.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header-inner">
+                <h1 class="header-logo"><a href="#top">Ku'shi Works</a></h1>
+
+                <nav class="header-nav" id="g-nav">
+                    <ul>
+                        <li><a href="#top">Top</a></li>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#link">Link</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main fade-in">
+            <section id="top" class="top-section">
+                <img src="images/top.jpg" alt="トップビジュアル" class="top-visual">
+            </section>
+
+            <section id="profile" class="profile-all">
+                <h2>Profile</h2>
+                <div class="Introduction">
+                <h3>Introduction</h3>
+                <p>2000年生まれ青森県出身、北海道在住のひかるです。</p>
+                <p>前職は、再生可能エネルギーの保守点検や家電の訪問修理を行なっておりました。</p>
+                <p>以前から、IT業界に興味を持ち、調べていく中でWEBサイトの制作に興味を持ちました。</p>
+                <p>そこから、独学でHTML/CSS、JavaScriptを勉強し始めました。</p>
+                <p>また、昔からゲームが好きなのでアプリ開発にも興味があります。</p>
+                </div>
+                <div class="Skills">
+                <h3>Skills</h3>
+                <ul>
+                <li>HTML/CSS...静的なWEBサイト制作</li>
+                <li>JavaScript...基礎</li>
+                <li>Figma...簡単なフレームワーク制作</li>
+                </ul>
+                </div>
+                <div class="Stranghs-Point">
+                <h3>Stranghs Point</h3>
+                <p>前職で培った、お客様との丁寧なコミュニケーション能力と出来ないことを出来るまで模索して実行するのが強みです。</p>
+                </div>
+            </section>
+
+            <section id="work" class="work-section">
+                <div class="work-title">
+                <h2>Work</h2>
+                <p class="work-span">これまでに制作した、WEBサイトやアプリ等のご紹介をします。</p>
+                </div>
+
+                <div class="work-gallery">
+                    <div class="work-item" data-type="website" data-url="https://hikaru-777.github.io/yakiniku-site/">
+                        <img src="images/website.jpg" alt="牛の写真" class="web-photo">
+                        <h3>焼肉屋のWEBサイト</h3>
+                        <p>架空の焼肉屋のWEBサイトを制作しました。</p>
+                        <p>現在携帯電話が主流となっていますので、モバイルファーストで制作しました。</p>
+                        <a href ="https://hikaru-777.github.io/food-shop/" target="_blank" class="view-site">サイトを見る</a>
+                    </div>
+
+                    <div class="work-item" data-type="app" data-url="https://hikaru-777.github.io/to-do-app/">
+                        <img src="images/app.jpg" alt="TO-DOアプリ" class="to-do-app">
+                        <h3>TO-DOアプリ</h3>
+                        <p>JavaScriptを使用して制作致しました。</p>
+                        <p>非常にシンプルではありますが、タスクの追加・削除機能があります。</p>
+                        <a href="https://hikaru-777.github.io/to-do-app/" target="_blank" class="view-app">アプリを見る</a>
+                    </div>
+
+                    <div class="work-item" data-type="banner">
+                        <img src="images/banner1.jpg" alt="banner画像1" class="banner1">
+                        <h3>バナーデザイン1</h3>
+                        <p>架空のバイクショップをイメージして制作しました。</p>
+                        <a href="images/view-banner1.jpg" target="_blank" class="view-banner1">拡大表示</a>
+                    </div>
+                    
+                    <div class="work-item" data-type="banner">
+                        <img src="images/banner2.jpg" alt="banner画像2" class="view-banner2">
+                        <h3>バナーデザイン2</h3>
+                        <p>架空のスポーツショップのセールをイメージして制作しました。</p>
+                        <a href="images/view-banner2.jpg" target="_blank" class="view-banner2">拡大表示</a>
+                    </div>  
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <p class="contact-span">ご感想・お問い合わせは以下のフォームよりお願いします。</p>
+
+            <div class="contact-form-containar">
+                <form action="hikaru.kushibiki3131@gmail.com" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" required placeholder="お名前をご入力ください">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="e-mail">ご連絡先（メールアドレス）</label>
+                        <input type="email" required placeholder="メールアドレスをご入力ください">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">お問い合わせ内容</label>
+                        <textarea rows="8" required placeholder="お問い合わせ内容をご入力ください"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button" id="sendButton">送信する</button>
+                </form>
+            </div>
+            </section>
+    
+            <section id="link" class="link-section">
+                <h2>Links</h2>
+
+                <div class="link-url">
+                    <a href="https://github.com/hikaru-777" target="_blank">
+                    <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>2025 Kushi Works All Rights Reserved.</p>
+        </footer>
+    <script src="script.js"></script>
+    </body>
+    
+</html>

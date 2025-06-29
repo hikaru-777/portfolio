@@ -1,0 +1,250 @@
+/*リセット*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    line-height: 1.6; /*行間*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed; /*スクロールしても固定*/
+    background-image: url("../images/back-photo.jpg"); /*背景画像設定↓*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#top {
+    background-color: rgba(250, 246, 246, 0.6);
+    padding-bottom: 10px;
+    border-bottom: 2px solid #999;
+
+}
+#profile {
+    background-color: rgba(250, 246, 246, 0.6);
+    padding-bottom: 10px;
+    border-bottom: 2px solid #999;
+}
+#work {
+    background-color: rgba(250, 246, 246, 0.6);
+    padding-bottom: 10px;
+    border-bottom: 2px solid #999;
+}
+#contact {
+    background-color: rgba(250, 246, 246, 0.6);
+    padding-bottom: 10px;
+    border-bottom: 2px solid #999;
+}
+#link {
+    background-color: rgba(250, 246, 246, 0.6); /*背景画像設定ここまで↑*/
+    padding-bottom: 10px;
+    border-bottom: 2px solid #999;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header{
+    background-color: #333;
+    color: #fff;
+    position: fixed; /*画面上部に固定*/
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto; /*PC用*/
+}
+
+.header-logo{
+   white-space: nowrap; /*折り返し防止*/
+}
+
+.header-nav ul{
+    display: flex;
+    list-style: none;
+    gap: 9px;
+}
+
+.header-nav ul li a{
+    font-size: 9px;
+}
+
+.header-nav a{
+    font-size: 16px;
+    transition: color 0.5s ease;
+    white-space: nowrap; /*折り返し防止*/
+}
+
+.header-nav a:hover{
+    color: aqua;
+}
+
+section{
+    display: flex; /*親要素に指定*/
+    flex-direction: column;
+    font-size: 32px;
+    font-weight: bold;
+    scroll-margin-top:70px ; /*これがなかったらスクロールずれる*/
+}
+
+.main h2{
+    font-size: 25px;
+}
+
+.top-visual{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.top-section{
+    padding-top: 90px;
+}
+
+.profile-all{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 10px;
+    padding: 20px;
+}
+
+.profile-all h3{
+    font-size: 20px;
+}
+
+.Skills li{
+    list-style: none;
+}
+
+.work-section{
+    font-size: 14px;
+}
+
+.work-title{
+    padding: 10px;
+}
+
+.work-span{
+    white-space: nowrap;
+}
+
+.work-gallery{
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+}
+
+.web-photo
+.to-do-app,
+.banner1,
+.banner2{
+    border-radius: 8px ;
+}
+
+@media (min-width: 600px){
+    #work{
+        padding: 10px 10px;
+    }
+    .work-gallery{
+        grid-template-columns: repeat(2,1fr); /*2つの等しい幅の列をつくること*/
+    }
+
+    .header-nav ul li a{
+        font-size: 19px;
+    }
+
+    .header-nav ul{
+        gap: 30px;
+    }
+}
+
+.view-site,
+.view-app,
+.view-banner1,
+.view-banner2{
+    color: blue;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.view-site:hover,
+.view-app:hover,
+.view-banner1:hover,
+.view-banner2:hover{
+    text-decoration: underline;
+    background-color: whitesmoke;
+}
+
+.contact-section{
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-form-containar{
+    padding-top: 13px;
+}
+
+.form-group label{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea{
+    width: 60%;
+    font-size: 16px;
+}
+
+.form-group{
+    padding-bottom: 20px;
+}
+
+.submit-button{
+    margin-bottom: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.link-section{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.link-url{
+    font-size: 60px;
+    padding-left: 20px;
+}
+
+.footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
